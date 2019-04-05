@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="wl.granjex2.Acionamentomanual"
+    android:background="@drawable/fundomadeira"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lâmpadas"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AcionamentoManualSpGranja"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/btnLampadasOn"
+        android:clickable="true"
+        android:background="@drawable/botaoligado"
+        android:enabled="true"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/btnLampadasOff"
+        android:layout_alignStart="@+id/btnLampadasOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/btnLampadasOff"
+        android:clickable="true"
+        android:background="@drawable/botaodesligado"
+        android:enabled="true"
+        android:layout_alignTop="@+id/btnLampadasOn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventiladores"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/btnLampadasOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON"
+        android:id="@+id/btnVentiladoresOn"
+        android:background="@drawable/botaoligado"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/btnVentiladoresOff"
+        android:layout_alignStart="@+id/btnVentiladoresOff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/btnVentiladoresOff"
+        android:background="@drawable/botaodesligado"
+        android:layout_alignTop="@+id/btnVentiladoresOn"
+        android:layout_alignLeft="@+id/btnLampadasOn"
+        android:layout_alignStart="@+id/btnLampadasOn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Granja"
+        android:id="@+id/textView38"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/AcionamentoManualSpGranja"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/botaodesligado"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

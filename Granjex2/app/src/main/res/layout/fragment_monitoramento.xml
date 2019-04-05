@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wl.granjex2.Monitoramento"
+    android:background="@drawable/fundomadeira">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Granja"
+        android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/MonitoramentoSpGranja"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/botaodesligado"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umidade"
+        android:id="@+id/M_btnUmidade"
+        android:background="@drawable/botaoredondo"
+        android:textSize="18dp"
+        android:layout_below="@+id/MonitoramentoSpGranja"
+        android:layout_alignLeft="@+id/MonitoramentoSpGranja"
+        android:layout_alignStart="@+id/MonitoramentoSpGranja"
+        android:layout_toLeftOf="@+id/textView8"
+        android:layout_toStartOf="@+id/textView8"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperatura"
+        android:id="@+id/M_btnTemperatura"
+        android:background="@drawable/botaoredondo"
+        android:textSize="18dp"
+        android:layout_below="@+id/MonitoramentoSpGranja"
+        android:layout_alignRight="@+id/MonitoramentoSpGranja"
+        android:layout_alignEnd="@+id/MonitoramentoSpGranja"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Umidade:"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/M_btnUmidade"
+        android:layout_alignLeft="@+id/M_btnUmidade"
+        android:layout_alignStart="@+id/M_btnUmidade"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temperatura:"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.00"
+        android:id="@+id/M_txtUmidade"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignRight="@+id/MonitoramentoSpGranja"
+        android:layout_alignEnd="@+id/MonitoramentoSpGranja" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0.00"
+        android:id="@+id/M_txtTemperatura"
+        android:layout_alignTop="@+id/textView35"
+        android:layout_alignRight="@+id/M_btnTemperatura"
+        android:layout_alignEnd="@+id/M_btnTemperatura" />
+
+
+</RelativeLayout>

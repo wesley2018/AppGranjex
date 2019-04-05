@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+    </group>
+
+    <item android:title="Opções">
+        <menu>
+            <item
+                android:id="@+id/inicial"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Inicial" />
+
+            <item
+                android:id="@+id/monitoramento"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Monitoramento" />
+            <item
+                android:id="@+id/historico"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Histórico" />
+            <item
+                android:id="@+id/acionamentomanual"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Acionamento Manual" />
+            </menu>
+    </item>
+
+
+    <item android:title="Cadastros">
+        <menu>
+            <item
+                android:id="@+id/usuario"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Usuário" />
+            <item
+                android:id="@+id/granja"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Granja" />
+
+        </menu>
+    </item>
+
+    <item android:title="Sair">
+        <menu>
+            <item
+                android:id="@+id/sair"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sair" />
+
+        </menu>
+    </item>
+
+</menu>
